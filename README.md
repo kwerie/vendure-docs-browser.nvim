@@ -21,7 +21,7 @@ Inspired by [bieglers-vendure-plugins/vscode-extension-vendure-helper](https://g
 
 ```lua
 return {
-  'kwerie/vendure-nvim-docs-plugin',
+  'kwerie/vendure-docs-browser.nvim',
   dependencies = {
     'nvim-telescope/telescope.nvim',
     -- 'j-hui/fidget.nvim', -- optional for fancy loading messages
@@ -36,7 +36,7 @@ return {
 
 ```lua
 use {
-  'kwerie/vendure-nvim-docs-plugin',
+  'kwerie/vendure-docs-browser.nvim',
   requires = { 'nvim-telescope/telescope.nvim' },
   config = function()
     require('vendure-nvim-docs-plugin').setup({})
@@ -56,7 +56,7 @@ Full lazy.nvim example with keybinding:
 
 ```lua
 return {
-  'kwerie/vendure-nvim-docs-plugin',
+  'kwerie/vendure-docs-browser.nvim',
   dependencies = {
     'nvim-telescope/telescope.nvim',
   },
