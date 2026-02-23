@@ -128,9 +128,11 @@ function M.browse_docs()
 			finder = finders.new_table({
 				results = docs,
 				entry_maker = function(entry)
+					local url = entry.url:gsub("%.md$", "")
+
 					return {
 						value = entry,
-						display = entry.title,
+						display = entry.title .. " " .. url,
 						ordinal = entry.title,
 					}
 				end,
